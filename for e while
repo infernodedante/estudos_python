@@ -1,0 +1,23 @@
+"""
+Iterável -> str, range, etc (metodo(__iter__))
+Iterador -> quem sabe entregar um valor por vez
+next -> me entregue o próximo valor
+iter -> me entregue seu iterador
+__ -> Thunder
+"""
+# for letra in texto
+texto = 'gustavo'  # iterável
+texto = 'gustavo'.__iter__()
+print(texto)
+
+# iteratador = iter(texto)  # iterator
+
+# while True:
+#     try:
+#         letra = next(iteratador)
+#         print(letra)
+#     except StopIteration:
+#         break
+
+for letra in texto:
+    print(letra)
